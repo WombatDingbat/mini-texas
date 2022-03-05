@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Circle nation | Home</title>
+    <title>Circle nation | Covid Report</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes"> <!--THIS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body class="body1">
     <div class="title-div">
@@ -13,7 +14,7 @@
     </div>
     <div class="bg">
         <div class="topnav" id="myTopnav">
-          <a href="#home" class="active">Home</a>
+          <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
           <a href="news.html">News</a>
           <a href="contact.html">Contact</a>
@@ -24,9 +25,13 @@
     </div>
     
     <div class="box1">
-      <a class="reports" href="COVID.html">Covid Report</a>
+      <a class="reports" href="#">Covid Report</a>
       <a class="reports" href="#">Crime Report</a>
       <a class="reports" href="#">Trade and Citizen Report</a>
+    </div>
+    <div class="box3">
+      <h1 class="covid-title">Covid Cases</h1>
+      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
     </div>
     <script type="text/javascript" charset="utf-8">
       function myFunction() {
@@ -41,6 +46,35 @@
         
       }
     </script>
+    <script>
+    var xValues = ["5/3/22","6/3/22","7/3/22","8/3/22","9/3/22","10/3/22"];
+    var yValues = [2, 0, 0];
+    
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+          
+        }]
+        
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          yAxes: [{ticks: {min: 0, max:25}}],
+          
+        }
+        
+      }
+      
+    });
+</script>
   </body>
   <footer class="footer1">
     <h1 class="copyright1">Circle Land .GOVT©2022</h1>
