@@ -1,6 +1,6 @@
 
-body { min-height: 117.8vh; }
-body {
+.body2 { min-height: 117.5vh; }
+.body2 {
   background: radial-gradient(ellipse farthest-corner at 0 150%, #27ae60 40%, #27ae60 75%, #1abc9c 20%);
   background-repeat: no-repeat;
 }
@@ -132,7 +132,22 @@ body {
   font-size: 17px;
 }
 
-footer{
+.footer{
+  position:absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding:10px;
+  margin-top:20px;
+  margin-bottom: 0px;
+  color:#ffffff;
+  background-color: rgba(52, 73, 94, 0.5);
+  text-align: center;
+}
+
+.footer2{
   position:absolute;
   margin-left: auto;
   margin-right: auto;
@@ -145,6 +160,7 @@ footer{
   background-color: rgba(52, 73, 94, 0.5);
   text-align: center;
 }
+
 
 .footer1{
   position:absolute;
