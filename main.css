@@ -1,5 +1,5 @@
 
-.body2 { min-height: 117.5vh; }
+.body2 { min-height: 100vh; }
 .body2 {
   background: radial-gradient(ellipse farthest-corner at 0 150%, #27ae60 40%, #27ae60 75%, #1abc9c 20%);
   background-repeat: no-repeat;
