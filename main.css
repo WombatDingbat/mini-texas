@@ -194,3 +194,12 @@ footer{
 .covid-title {
   color: black;
 }
+
+.crime-meter {
+  width: 100px;
+  height: 100px;
+}
+
+.crime-p {
+  color: green;
+}
